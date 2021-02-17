@@ -56,12 +56,5 @@ public interface ListStudent {
 	 * @return
 	 */
 	public boolean contains(Student student);
-	/**
-	 * This method count the students in the list
-	 * 
-	 * @author miguel.abucarub.neto
-	 * @Date 2020-08-20
-	 *
-	 */
-	public void count();
+
 }

@@ -1,32 +1,19 @@
 package com.abucarub.miguel.datastructure;
 
+import org.junit.runner.RunWith;
+
 import com.abucarub.miguel.datastructure.list.Student;
 import com.abucarub.miguel.datastructure.list.Vector;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertTrue;
 
-public class AddStudentInTheEndTest  extends TestCase{
-	
-    /**
-     * Create the test case
-     *
-     * @param should_addInTheEnd name of the test case
-     */
-	public AddStudentInTheEndTest(String should_addInTheEnd) {
-		super( should_addInTheEnd );
-	}
-	
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AddStudentInTheEndTest.class );
-    }
+import org.junit.Test;
 
-	public static void testShould_addInTheEnd(){
+
+public class AddStudentInTheEndTest{
+
+	@Test
+	public void should_testAddInTheEnd(){
 		Student s1 = new Student();
 		Student s2 = new Student();
 		
@@ -35,7 +22,6 @@ public class AddStudentInTheEndTest  extends TestCase{
 		
 		Vector list = new Vector();
 		list.addStudent(s1);
-		list.addStudent(s2);
 		
 		System.out.println("----------should_addInTheEnd----------");
 		System.out.println(list);

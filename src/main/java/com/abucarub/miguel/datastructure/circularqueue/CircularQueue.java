@@ -2,7 +2,7 @@ package com.abucarub.miguel.datastructure.circularqueue;
 
 import java.util.Arrays;
 
-/*
+/**
  * 
  * CircularQueue
  * A classe que implementa Queue.
@@ -10,12 +10,12 @@ import java.util.Arrays;
  */
 class CircularQueue implements Queue<PrintJob> {
 
-	private volatile int currentSize; // Current Circular Queue Size
+	private volatile int currentSize; // Tamanho atual da fila circular
 	private PrintJob[] circularQueueElements;
-	private int maxSize; // Circular Queue maximum size
+	private int maxSize; // Maximo tamanho da fila
 
-	private int rear;// rear position of Circular queue(new element enqueued at rear).
-	private int front; // front position of Circular queue(element will be dequeued from front).
+	private int rear;// posição traseira da fila circular (novo elemento enfileirado na parte traseira).
+	private int front; // posição frontal da fila circular (o elemento será retirado da frente).
 
 	public CircularQueue(int maxSize) {
 		this.maxSize = maxSize;
@@ -26,7 +26,7 @@ class CircularQueue implements Queue<PrintJob> {
 	}
 
 	/**
-	 * Enqueue elements to rear.
+	 * Enqueue elements to rear. Enfileira os itens
 	 */
 	public synchronized void enqueue(PrintJob item) throws FullQueueException {
 
