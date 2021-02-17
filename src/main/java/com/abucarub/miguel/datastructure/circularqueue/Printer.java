@@ -17,10 +17,21 @@ package com.abucarub.miguel.datastructure.circularqueue;
  */
 
 /**
- * This class represents a Printer
+ * This class represents a Printer 
+ * Esta classe, que representa uma impressora,
+ * possui uma referência para a fila de impressão QUEUE. A thread da classe será
+ * responsável por imprimir um trabalho da fila sempre que o mesmo estiver
+ * disponível. O método que desliga a impressora halt() faz com que a impressora
+ * finalize a impressão do trabalho corrente e então desligue. Ao retirar um
+ * trabalho da fila, a impressora imprime o trabalho multiplicando o valor de
+ * MILLIS_PER_PAGE pelo total de páginas do trabalho e esperando por este tempo
+ * antes de notificar o usuário que a impressão do trabalho foi finalizada.
+ * Quando a fila estiver vazia a impressora deverá esperar – e não consumir
+ * processamento – até que seja notificada sobre a existência de novos trabalhos
+ * de impressão na fila.
  * 
  * @author miguel.abucarub.neto
- * @Date 2020-08-17
+ * @Date 17-02-2021
  */
 public class Printer implements Runnable {
 

@@ -1,12 +1,14 @@
 package com.abucarub.miguel.datastructure.circularqueue;
 
-/*
- * Teste C#
+/**
  * 	PrintJob
  * 	Esta classe representa um arquivo a ser impresso e tem como atributos o nome e o
- *  n�mero de p�ginas do arquivo. O n�mero de p�ginas ser� usado pela impressora para
- *  �imprimir� o trabalho. Quanto maior o n�mero de p�ginas mais tempo a impressora
- *  levar� para imprimi-lo.
+ *  numero de paginas do arquivo. O numero de paginas será usado pela impressora para
+ *  imprimir o trabalho. Quanto maior o numero de paginas, mais tempo a impressora
+ *  levara para  imprimi-lo.
+ *  
+ * @author miguel.abucarub.neto
+ * @Date 17-02-2021
  * 
  */
 class PrintJob {

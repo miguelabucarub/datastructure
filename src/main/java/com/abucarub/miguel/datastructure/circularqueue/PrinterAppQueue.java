@@ -3,7 +3,7 @@ package com.abucarub.miguel.datastructure.circularqueue;
 /**
  * 
  * @author miguel.abucarub.neto
- * @Date 2020-08-17
+ * @Date 17-02-2021
  */
 public class PrinterAppQueue {
 
